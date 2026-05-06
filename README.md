@@ -2,9 +2,15 @@
 
 ## Cockroach Cloud Setup
 
-Follow CockroachDB documentation to set environment variable DATABASE_URL to the connection string : https://www.cockroachlabs.com/docs/stable/connect-to-the-database?filters=python
+Following CockroachDB documentation: https://www.cockroachlabs.com/docs/stable/connect-to-the-database?filters=python
 
-In a nutshell the process is first downloading and setting up a valid CA certificate located at `~/.postgresql/root.crt`, and then running a shell command in the form of: `export DATABASE_URL="postgresql://{username}:{password}@{host}:{port}/{database}?sslmode=verify-full"`.
+1. Download the valid CA certificate.
+
+2. Run the command to export DATABASE_URL in the form of:
+
+`export DATABASE_URL="postgresql://{username}:{password}@{host}:{port}/{database}?sslmode=verify-full"`.
+
+DSCI 551 instructors: please find in the final report the exact commands to run (verbatim) with pre-setup certificate and connection string.
 
 ## Python Setup
 
@@ -19,6 +25,8 @@ In terminal run all shell commands in order:
 `pip3 install -r requirements.txt`
 
 ## Running
+
+(Run `source env/bin/activate` for each tab)
 
 In the first terminal tab run: `python3 server.py`
 
