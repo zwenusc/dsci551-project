@@ -56,4 +56,4 @@ The `InitializeDrones` function creates a fleet of drones.
 
 Generation: Each drone is initialized with a generic name (e.g., `drone_0`) and a random starting position on the global map.
 
-Loading: Similar to warehouses, each drone calls its Register() method, sending a POST request to `/register_drone`. Once registered, the script calls GetDroneState() to pull server-side data into the local Python `Drone` object.
+Loading: Similar to warehouses, each drone calls its `Register` method, sending a POST request to `/register_drone`. Once registered, the script calls `GetDroneState` to pull server-side data into the local Python `Drone` object.
